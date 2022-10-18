@@ -20,6 +20,11 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -ms-overflow-style: none; // for hiding the scrollbar on edge and internet exploror
+
+    &::-webkit-scrollbar {
+        display: none;// for hiding the scrollbar on chromium
+    }
 
     .layout-secondary,
     [role="complementary"] {
@@ -1321,7 +1326,6 @@ blockquote {
 
 .codedump {
     background: var(--code-bg);
-    color: var(--code-fg);
     border: 1px solid var(--hairline-color);
     padding: 10px;
     border-radius: 4px;
