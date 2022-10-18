@@ -20,6 +20,11 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -ms-overflow-style: none; // for hiding the scrollbar on edge and internet exploror
+
+    &::-webkit-scrollbar {
+        display: none;// for hiding the scrollbar on chromium
+    }
 
     .layout-secondary,
     [role="complementary"] {
